@@ -1,1 +1,1 @@
-https://anilbiradarportfolio.netlify.app/
+https://anilbiradar.netlify.app/
