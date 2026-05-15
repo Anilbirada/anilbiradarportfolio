@@ -1,1 +1,1 @@
-https://aesthetic-brioche-1bedba.netlify.app/
+https://anilbiradarportfolio.netlify.app/
