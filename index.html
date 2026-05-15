@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anil Biradar - Web Developer, Data Analyst & Power BI Enthusiast. BCA Student from Bidar, Karnataka." />
+  <meta name="keywords" content="Anil Biradar, Web Developer, Data Analyst, Power BI, Portfolio, BCA, Bidar" />
+  <meta name="author" content="Anil Biradar" />
+  <title>Anil Biradar | Web Developer & Data Analyst</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Anil<span class="logo-accent">.</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="resume.pdf" download class="nav-resume-btn">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <!-- Animated background grid -->
+    <div class="hero-grid"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-container">
+      <!-- Text Content -->
+      <div class="hero-text reveal">
+        <p class="hero-greeting">👋 Hello, World! I'm</p>
+        <h1 class="hero-name">Anil <span class="accent">Biradar</span></h1>
+        <div class="hero-title-wrap">
+          <span class="hero-static">I'm a </span>
+          <span class="typing-text" id="typing-text"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+          BCA 6th Semester student passionate about building modern web experiences,
+          analysing data and crafting interactive Power BI dashboards.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            View My Work <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Hire Me <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+        <!-- Social row -->
+        <div class="hero-social">
+          <a href="https://github.com/Anilbirada" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anil-biradar-531a71317" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:aniladani843@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+918431712924" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <!-- Profile Photo Card -->
+      <div class="hero-photo reveal reveal-right">
+        <div class="photo-card">
+          <div class="photo-glow"></div>
+          <div class="photo-ring">
+            <div class="photo-inner">
+              <!-- Placeholder avatar with initials -->
+              <div class="photo-placeholder" aria-label="Anil Biradar Profile Photo">
+                <span class="initials">AB</span>
+                <div class="photo-overlay">
+                  <i class="fa-solid fa-camera"></i>
+                  <p>Add Your Photo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Decorative badges -->
+          <div class="badge badge-tl"><i class="fa-brands fa-html5"></i> HTML5</div>
+          <div class="badge badge-br"><i class="fa-solid fa-chart-bar"></i> Power BI</div>
+          <div class="badge badge-bl"><i class="fa-brands fa-python"></i> Python</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- About text -->
+        <div class="about-content reveal">
+          <h3 class="about-subtitle">Who am I?</h3>
+          <p class="about-text">
+            I'm <strong>Anil Biradar</strong>, a <strong>BCA 6th Semester</strong> student at
+            Channabasamma BCA and BCom College, Bidar, affiliated with Bidar University.
+            I'm driven by curiosity and a desire to solve real-world problems through technology.
+          </p>
+          <p class="about-text">
+            My interests span across <strong>Web Development</strong>, <strong>Data Analytics</strong>,
+            and <strong>Business Intelligence</strong>. I love turning raw data into meaningful visual
+            stories with Power BI and building clean, responsive websites from scratch.
+          </p>
+          <p class="about-text">
+            I'm constantly learning, building, and growing — one project at a time.
+          </p>
+
+          <!-- Quick info cards -->
+          <div class="about-info-grid">
+            <div class="info-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Humnabad, Bidar, Karnataka</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Course</span>
+                <span class="info-value">BCA – 6th Semester</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">aniladani843@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span class="info-label">Phone</span>
+                <span class="info-value">+91 8431712924</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="resume.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="about-stats reveal reveal-right">
+          <div class="stat-card glass">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number" data-target="6">0</span>
+            <span class="stat-label">Semesters Completed</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">% Passion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card glass reveal" data-delay="0">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="92"><div class="skill-fill"></div></div>
+            <span class="skill-pct">92%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="60">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="88"><div class="skill-fill"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="120">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="78"><div class="skill-fill"></div></div>
+            <span class="skill-pct">78%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="180">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <h4>Python</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75"><div class="skill-fill"></div></div>
+            <span class="skill-pct">75%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="240">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h4>SQL</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80"><div class="skill-fill"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="300">
+          <div class="skill-icon"><i class="fa-solid fa-chart-bar"></i></div>
+          <h4>Power BI</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="82"><div class="skill-fill"></div></div>
+            <span class="skill-pct">82%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="360">
+          <div class="skill-icon"><i class="fa-solid fa-file-excel"></i></div>
+          <h4>Excel</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85"><div class="skill-fill"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="420">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h4>Responsive Design</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="86"><div class="skill-fill"></div></div>
+            <span class="skill-pct">86%</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" data-delay="480">
+          <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+          <h4>GitHub</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="79"><div class="skill-fill"></div></div>
+            <span class="skill-pct">79%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION SECTION ===================== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My academic journey</span>
+        <h2 class="section-title">Edu<span class="accent">cation</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-info">
+              <span class="edu-badge">Current</span>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <h4>Channabasamma BCA and BCom College, Bidar</h4>
+              <p class="edu-university"><i class="fa-solid fa-university"></i> Bidar University</p>
+              <p class="edu-sem"><i class="fa-solid fa-calendar-days"></i> 6th Semester — In Progress</p>
+              <ul class="edu-highlights">
+                <li>Web Development &amp; Programming</li>
+                <li>Database Management Systems</li>
+                <li>Data Analytics &amp; Business Intelligence</li>
+                <li>Software Engineering Principles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="edu-info">
+              <h3>Pre-University Course (PUC)</h3>
+              <h4>Humnabad, Bidar, Karnataka</h4>
+              <p class="edu-sem"><i class="fa-solid fa-calendar-days"></i> Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Things I've built</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass reveal" data-delay="0">
+          <div class="project-img-wrap">
+            <div class="project-img project-img-1">
+              <i class="fa-solid fa-briefcase project-icon"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Anilbirada" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Responsive Portfolio Website</h3>
+            <p>A fully responsive personal portfolio website with modern dark theme, smooth animations, glassmorphism UI, and mobile-first design.</p>
+            <div class="project-links">
+              <a href="https://github.com/Anilbirada" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass reveal" data-delay="100">
+          <div class="project-img-wrap">
+            <div class="project-img project-img-2">
+              <i class="fa-solid fa-calculator project-icon"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Anilbirada" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Calculator App</h3>
+            <p>A sleek, fully functional calculator built with vanilla JavaScript. Supports all basic arithmetic operations with a clean, modern UI and keyboard support.</p>
+            <div class="project-links">
+              <a href="https://github.com/Anilbirada" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass reveal" data-delay="200">
+          <div class="project-img-wrap">
+            <div class="project-img project-img-3">
+              <i class="fa-solid fa-user-lock project-icon"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Anilbirada" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Login &amp; Registration Page</h3>
+            <p>A professional authentication UI with login and sign-up forms, form validation, smooth animations and a polished responsive layout.</p>
+            <div class="project-links">
+              <a href="https://github.com/Anilbirada" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass reveal" data-delay="300">
+          <div class="project-img-wrap">
+            <div class="project-img project-img-4">
+              <i class="fa-solid fa-chart-pie project-icon"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Anilbirada" target="_blank" class="project-link-btn">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">Excel</span>
+              <span class="tag">SQL</span>
+            </div>
+            <h3>Power BI Dashboard</h3>
+            <p>An interactive business intelligence dashboard built with Power BI. Visualises key metrics, trends and KPIs using dynamic charts and data models.</p>
+            <div class="project-links">
+              <a href="https://github.com/Anilbirada" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's work together</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p>I'm currently open to freelance work, internships, and collaborative projects. Drop me a message and I'll get back to you as soon as possible!</p>
+
+          <div class="contact-details">
+            <a href="mailto:aniladani843@gmail.com" class="contact-item glass">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">aniladani843@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+918431712924" class="contact-item glass">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 8431712924</span>
+              </div>
+            </a>
+            <div class="contact-item glass">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Humnabad, Bidar, Karnataka, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="social-links">
+            <a href="https://github.com/Anilbirada" target="_blank" class="social-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anil-biradar-531a71317" target="_blank" class="social-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:aniladani843@gmail.com" class="social-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+918431712924" class="social-btn" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal reveal-right">
+          <form class="contact-form glass" id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-tag"></i>
+                <input type="text" id="subject" name="subject" placeholder="How can I help?" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fa-solid fa-message"></i>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Anil<span class="logo-accent">.</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Web Developer · Data Analyst · Power BI Enthusiast</p>
+        <div class="footer-social">
+          <a href="https://github.com/Anilbirada" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/anil-biradar-531a71317" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:aniladani843@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2025 <span class="accent">Anil Biradar</span>. Crafted with
+          <i class="fa-solid fa-heart" style="color:#f43f5e"></i> in Bidar, Karnataka.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
