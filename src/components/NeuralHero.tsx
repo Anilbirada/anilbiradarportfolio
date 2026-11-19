@@ -141,29 +141,37 @@ export const NeuralHero: React.FC = () => {
 
         {/* Headshot & Technical Identity Grid */}
         <div className="relative mb-6 group">
-          <div className="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 rounded-full blur-md opacity-70 group-hover:opacity-100 transition duration-500" />
-          <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-2 border-cyan-400/80 shadow-2xl bg-slate-950">
-            <img
-              src="/images/00_Anil_Biradar_Profile_Headshot.jpg"
-              alt="Anil Biradar - Junior AI Engineer"
-              className="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition duration-500"
-              onError={(e) => {
-                // Fallback avatar if local image not found
-                const target = e.currentTarget;
-                target.style.display = 'none';
-                const parent = target.parentElement;
-                if (parent) {
-                  parent.innerHTML = `
-                    <div class="w-full h-full flex flex-col items-center justify-center bg-slate-900 text-cyan-400 font-bold text-3xl">
-                      AB
-                    </div>
-                  `;
-                }
-              }}
-            />
+          {/* Outer Pulsing Neon Glow */}
+          <div className="absolute -inset-2 bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse" />
+          
+          {/* Double-Ring Container */}
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-sky-400 to-blue-600 shadow-[0_0_30px_rgba(0,242,254,0.35)]">
+            <div className="w-full h-full rounded-full overflow-hidden bg-slate-950 border-2 border-slate-900 shadow-inner">
+              <img
+                src="/images/00_Anil_Biradar_Profile_Headshot.jpg"
+                alt="Anil Biradar - Junior AI Engineer"
+                className="w-full h-full object-cover object-center scale-110 group-hover:scale-115 transition duration-500"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = `
+                      <div class="w-full h-full flex flex-col items-center justify-center bg-slate-900 text-cyan-400 font-bold text-3xl">
+                        AB
+                      </div>
+                    `;
+                  }
+                }}
+              />
+            </div>
           </div>
-          {/* Engineering Verification Badge */}
-          <div className="absolute bottom-0 right-0 p-1.5 bg-slate-950 border border-cyan-500/50 rounded-full text-cyan-400 shadow-lg">
+
+          {/* Verified Engineering Badge with Tooltip */}
+          <div
+            className="absolute bottom-1 right-1 p-2 bg-slate-950/95 border-2 border-cyan-400 rounded-full text-cyan-300 shadow-[0_0_15px_rgba(0,242,254,0.5)] backdrop-blur-md cursor-pointer group-hover:scale-110 transition duration-300"
+            title="Verified AI Engineer"
+          >
             <ShieldCheck className="w-5 h-5 text-cyan-400" />
           </div>
         </div>
