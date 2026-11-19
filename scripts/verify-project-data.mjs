@@ -35,7 +35,7 @@ assert(fs.existsSync(path.join(root, 'public', 'sitemap.xml')), 'public/sitemap.
 
 // 3. Check Headshot and Project Images
 const requiredImages = [
-  '00_Anil_Biradar_Profile_Headshot.jpg',
+  'anil_biradar_headshot.jpg',
   '01_Build_IQ_Workflow_Automation.jpg',
   '02_Support_IQ_Customer_Support.jpg',
   '03_NEXGEN_Lead_Gen_Agents.jpg',

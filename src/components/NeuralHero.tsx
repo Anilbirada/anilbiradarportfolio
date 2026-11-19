@@ -148,9 +148,9 @@ export const NeuralHero: React.FC = () => {
           <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-sky-400 to-blue-600 shadow-[0_0_30px_rgba(0,242,254,0.35)]">
             <div className="w-full h-full rounded-full overflow-hidden bg-slate-950 border-2 border-slate-900 shadow-inner">
               <img
-                src="/images/00_Anil_Biradar_Profile_Headshot.jpg"
+                src="/images/anil_biradar_headshot.jpg"
                 alt="Anil Biradar - Junior AI Engineer"
-                className="w-full h-full object-cover object-center scale-110 group-hover:scale-115 transition duration-500"
+                className="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
                 onError={(e) => {
                   const target = e.currentTarget;
                   target.style.display = 'none';
